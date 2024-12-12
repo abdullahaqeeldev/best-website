@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix</title>
+    <style>
+        @import url('https://unpkg.com/css.gg@2.0.0/icons/css/math-plus.css');
+
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(66, 66, 66);
+
+
+        }
+
+
+        .navbar {
+            background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(header-image.png);
+            width: 100%;
+            height: 700px;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            color: red;
+        }
+
+        .logo img {
+            mix-blend-mode: red;
+            height: 40px;
+
+            padding-top: 20px;
+            padding-left: 150px;
+        }
+
+        .icons {
+            float: right;
+            display: flex;
+            padding-top: 20px;
+            padding-right: 200px;
+        }
+
+        .icons a {
+            background-color: red;
+            color: white;
+            box-sizing: border-box;
+            border: 1px solid red;
+            border-radius: 5px;
+            border-width: 10px;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 550;
+        }
+
+        .content {
+            padding-top: 300px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: "Archivo Black", sans-serif;
+            font-size: 50px;
+            font-weight: 600;
+
+        }
+
+        .navbar p {
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            font-family: "Roboto", sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+
+        }
+
+        .navbar input {
+            float: left;
+            display: flex;
+            margin-left: 320px;
+            background-color: rgb(0, 0, 0, 0.6);
+            height: 55px;
+            width: 400px;
+            border-radius: 5px;
+            border: 1px solid rgb(150, 149, 149);
+            float: left;
+
+        }
+
+        .navbar input::placeholder {
+            padding-left: 10px;
+            font-size: 15px;
+            color: rgb(136, 136, 136);
+        }
+
+        .navbar input:focus {
+            color: white;
+            font-size: 20px;
+            padding-left: 10px;
+        }
+
+
+        .btn {
+            float: right;
+            margin-right: 330px;
+
+        }
+
+        .btn button {
+
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: "Roboto", sans-serif;
+            background-color: red;
+            height: 55px;
+            width: 200px;
+            color: white;
+            border-radius: 5px;
+            border: 0px;
+        }
+
+        .btn button:hover {
+            background-color: rgb(165, 10, 10);
+        }
+
+        /* section*/
+        .section {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            background-color: black;
+
+
+        }
+
+        .img1 {
+            height: 350px;
+            margin-right: 150px;
+            margin-top: 30px;
+
+
+        }
+
+        .text {
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-size: 25px;
+            padding-top: 100px;
+            padding-left: 200px;
+        }
+
+        .text h1 {
+            font-size: 40px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 1000;
+        }
+
+        /*section2*/
+
+        .section2 {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: black;
+
+
+        }
+
+        .img {
+            height: 350px;
+            margin-left: 150px;
+            margin-top: 30px;
+            float: left;
+
+        }
+
+        .text2 {
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-size: 25px;
+            padding-top: 50px;
+            padding-right: 100px;
+        }
+
+        .text2 h1 {
+            font-size: 40px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 1000;
+        }
+
+        .heading2 {
+            padding-top: 30px;
+            background-color: black;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-size: 40px;
+            font-weight: 1000;
+            text-align: center;
+        }
+
+        .article {
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .box1 {
+            padding-top: 50px;
+            background-color: black;
+            width: 100%;
+            height: 100px;
+        }
+
+        .box {
+            background-color: black;
+            width: 100%;
+            height: 100px;
+
+        }
+
+        .question {
+            background-color: rgb(53, 53, 53);
+            height: 90px;
+            width: 900px;
+            margin-left: 200px;
+
+
+        }
+
+        .question:hover {
+            background-color: rgb(63, 63, 63);
+        }
+
+
+        .question>a {
+            text-decoration: none;
+        }
+
+        .question a {
+            float: left;
+        }
+
+        .question a p {
+            float: left;
+            padding-top: 35px;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+
+        .question a p i {
+            float: right;
+            text-align: right;
+            margin-left: 570px;
+            margin-top: 13px;
+
+        }
+
+        footer {
+            background-color: black;
+            margin-top: 1px;
+            display: flex;
+        }
+
+        .column {
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 50px;
+            margin-left: 20px;
+
+        }
+
+        .column h4 {
+            border-left: 4px solid red;
+
+            color: white;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 10px;
+
+
+        }
+
+        .column ul li a {
+            font-family: "Poppins", sans-serif;
+            color: rgb(59, 59, 59);
+
+        }
+
+        .icon {
+            color: white;
+            padding-top: 220px;
+        }
+
+        p {
+            color: white;
+            font-family: "Poppins", sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><img src="logo.png" alt=""></div>
+                <div class="icons"><a href="loginpage.html">sigin in</a></div>
+                <div class="content">unimited movies, TV shows, and more</div>
+                <p>Watch anywhere. Cancel anytime.</p>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <input type="search" name="search" id="search" placeholder="Email address">
+                <div class="btn">
+                    <button>Get Started ></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <div class="section">
+        <div class="text">
+            <h1>Enjoy on your TV</h1>
+            <br>
+            <p>
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+            </p>
+
+        </div>
+        <img class="img1" src="feature-1.png" alt="">
+    </div>
+    <br>
+    <div class="section2">
+        <div class="text2">
+            <h1>Download your shows to watch offline</h1>
+            <br>
+            <p>
+                Save your favorites easily and always have something to watch.
+            </p>
+
+        </div>
+        <img class="img" src="feature-2.png" alt="">
+    </div>
+    <br>
+
+    <div class="section">
+        <div class="text">
+            <h1>Watch everywhere</h1>
+            <br>
+            <p>
+                Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+            </p>
+
+        </div>
+        <img class="img1" src="feature-3.png" alt="">
+    </div>
+    <br>
+
+    <div class="section2">
+        <div class="text2">
+            <h1>Create profiles for kids</h1>
+            <br>
+            <p>
+                Send kids on adventures with their favorite characters in a space made just for them—free with your
+                membership.
+            </p>
+
+        </div>
+        <img class="img" src="feature-2.png" alt="">
+    </div>
+    <br>
+
+    <div class="heading2">
+        Frequently Asked Questions
+    </div>
+    <div class="box1">
+        <div class="question">
+            <a href="#">
+
+                <p>Where can i watched?<i class="gg-math-plus"></i> </p>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="box">
+        <div class="question">
+            <a href="#">
+                <p>How do i cancel? <i style="margin-left: 626px;" class="gg-math-plus"></i></p>
+            </a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="question">
+            <a href="#">
+                <p>What can i watched?<i style="margin-left: 586px;" class="gg-math-plus"></i></p>
+            </a>
+        </div>
+    </div>
+    <div class="box">
+        <div class="question">
+            <a href="#">
+                <p>Is netflix good for kids?<i style="margin-left: 563px;" class="gg-math-plus"></i></p>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="column">
+
+            <ul>
+                <h4> about</h4>
+                <li><a href="#">Questions? Contact </a></li>
+                <li><a href="#"> FAQ</a></li>
+                <li><a href="#"> Help Center</a></li>
+                <li><a href="#"> Account</a></li>
+        </div>
+        <div class="column">
+
+            <ul>
+                <h4> product</h4>
+                <li> <a href="#">media</a></li>
+                <li> <a href="#"> Investor Relations</a></li>
+                <li> <a href="#">Jobs</a></li>
+                <li> <a href="#">Ways to </a></li>
+            </ul>
+        </div>
+        <div class="column">
+
+            <ul>
+                <h4> important</h4>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#"> Privacy</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Corporate Information</a></li>
+        </div>
+        <div class="column">
+
+            <ul>
+                <h4> home</h4>
+                <li><a href="#"> Contact Us</a></li>
+                <li><a href="#"> Contact Us</a></li>
+                <li><a href="#"> Speed Test</a></li>
+                <li><a href="#">Legal Notices</a></li>
+                <li><a href="#">Only on netflix</a></li>
+
+            </ul>
+        </div>
+
+        <div class="icon">
+            <p>follow us in</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
+                viewBox="0 0 16 16">
+                <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok"
+                viewBox="0 0 16 16">
+                <path
+                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+            </svg>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
